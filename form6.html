@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
+body {
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     height:100vh;
+     background-color:#f2f2f2;
+     font-family: 'Russo One', sans-serif;
+}
+
+.container {
+		background-color:#ecf0f3;
+		width:350px;
+		padding:30px;
+		border-radius:20px;
+		box-shadow: 14px 14px 20px #cbced1,-14px -14px  20px white;   
+}
+
+h2{
+	text-align:center;
+	font-size:30px;
+	color:rgba(219, 27, 120, 0.8);
+	text-transform:uppercase;
+
+}
+
+.container .form-control {
+		background-color:#ecf0f3;
+		border:none;
+		outline:none;
+		color:#333;
+		
+		padding:20px;
+		height:50px;
+		letter-spacing:1px;
+		border-radius:20px;
+		box-shadow:inset 6px 6px 6px #cbced1,inset -6px -6px 6px white;
+		display:inline-block;
+		width:100%;
+		margin:0 0 30px;
+}
+
+::placeholder{
+		font-size:16px;
+		font-weight:bolder;
+		color:#808080;
+}
+
+.form-control:hover {
+		background:rgba(0, 246, 0, 0.04);
+}
+
+
+.btn {
+	color:rgba(219, 27, 120, 0.8);
+	width:100%;
+	border:none;
+	font-size:16px;
+	font-weight:bolder;
+	text-transform:uppercase;
+	background:#ecf0f3;
+	border-radius:20px;
+	padding:12px 15px 11px;
+	box-shadow:6px 6px 6px #cbced1,-6px -6px 6px #fff;
+	margin:20px 0 25px;
+}
+
+
+.btn:hover {
+
+ color:rgba(0, 202, 0, 0.8);
+ background:rgba(0, 202, 0, 0.19);
+ transform:translate(0px,2px);
+ transition:.4s esse-in-out;
+}
+</style>
+</head>
+<body>
+
+<div class="container" >
+	<form>
+		<h2 class="title" >Login</h2>
+		<input type="email" placeholder="Email Address" class="form-control"  >
+		<input type="password" placeholder="Password" class="form-control"  >
+		<button type="button" class="btn" >Login</button>
+	</form>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+<!-- font-family: 'Russo One', sans-serif; 

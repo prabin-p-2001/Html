@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	background-image:url("images - 2022-09-05T204312.818.jpeg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+div{
+	background-color:#191919;
+	width:280px;
+	height:400px;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-shadow:15px 15px 20px rgba(0,0,0,1);
+	border-radius:0px 30px 0px 30px;
+	
+}
+
+h1{
+	text-align:center;
+	font-family:monospace;
+	font-size:35px;
+	margin:50px;
+	letter-spacing:5px;
+	color:#ffbf0f;
+	
+}
+
+div .text, .pass{
+				outline:none;
+				border:1px solid #00bfff;
+				border-radius:2px;
+				width:180px;
+				height:30px;
+				text-align:center;
+				margin:10px 10px 9px 40px;
+				font-size:17px;
+				font-family:sans-serif;
+				letter-spacing:2px;
+				color:#fff;	
+				background:none;
+						
+}
+
+div .login{
+		width:100px;
+		height:30px;
+		margin:30px 90px;
+		border:1px solid #7CFC00;
+		border-radius:20px;
+		font-weight:bold;;
+		color:#fff;
+		background:none;
+}
+
+.login:hover {
+
+				box-shadow:0px 10px 20px lime inset;
+				font-size:18px;
+}
+				
+.pass:hover,.text:hover {
+				border-radius:30px;
+				border-block-start-width:5px;
+				border-top-color:lime;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div>
+<h1>Login</h1>
+<input type="text" placeholder="username" class="text">
+<input type="password" class="pass"  placeholder="password">
+<input type="submit" value="Login" class="login" >
+</div>
+
+</body>
+</html>

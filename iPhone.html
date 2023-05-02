@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>web</title>
+
+<style type="text/css">
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background-color:#fff;
+	
+}
+
+.box{
+	position:relative;
+	height:600px;
+	width:300px;
+	background-color:gray;
+	border-radius:50px;
+
+}
+
+.box::before{
+		content:'';
+		position:absolute;
+		inset:3px;
+		background:black;
+		border-radius:48px;
+}
+
+.inner {
+	  position:absolute;
+	  inset:2px;
+	  background-image:url("Iphone.jpeg");
+	  background-size:cover;
+	  background-position:center;
+	  border-radius:48px;
+	  border:10px solid black;
+	  display:flex;
+	  justify-content:center;
+	  opacity:0;
+	  transition:0.5s;
+	  text-align:center;
+}
+
+
+
+.box:hover .inner{
+			opacity:1;
+}
+
+
+.island{
+	position:absolute;
+	top:10px;
+	height:25px;
+	width:90px;
+	background-color:black;
+	border-radius:20px;
+	transition:0.5s ease-in-out;
+	color:black;
+
+
+}
+.island img,p{
+		opacity:0;
+}
+
+.island:hover{
+		height:25px;
+		width:200px;
+		color:white;
+		font-weight:bolder;
+		justify-content:center;
+		align-items:center;
+		
+}
+
+.island:hover img{
+			opacity:1;
+
+}
+.island:hover p{
+			opacity:1;
+}
+
+time{
+	position:absolute;
+	left:20px;
+	top:15px;
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+	
+}
+
+.indicator {
+		background-color:black;
+		border:2px solid black;
+		border-radius:50px;
+		height:2px;
+		width:110px;
+		position:relative;
+		top:98.8%;
+		
+}
+
+</style>
+</head>
+<body>
+
+<div class="box" > 
+   <div class="inner" >
+   	   <time>12:06</time>
+   	   
+   		<div class="island">
+   		<img src="images.png" style="width:20px; height:25px; position:absolute; left:6px; border-radius:50px;">
+   		<p style="font-size:10px; color:lime; position:absolute; top:6px; left:25px;"  >0:01</p>
+   		<img src="Sound wave background.jpeg" style="width:29px; height:25px; position:absolute; right:15px;">
+   		</div>
+     <div class="indicator" >
+    
+     </div>
+   </div>
+
+</div>
+
+
+</body>
+</html>
